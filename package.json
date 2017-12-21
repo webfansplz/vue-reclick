@@ -1,0 +1,23 @@
+{
+  "name": "vue-reclick",
+  "version": "1.0.0",
+  "description": "a directive of vue.js",
+  "main": "vue-reclick.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webfansplz/vue-reclick.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-reclick"
+  ],
+  "author": "webfansplz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webfansplz/vue-reclick/issues"
+  },
+  "homepage": "https://github.com/webfansplz/vue-reclick#readme"
+}

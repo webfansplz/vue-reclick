@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-reclick</title>
+  <style>
+    #reclick {
+      margin-top: 66px;
+    }
+
+    #reclick .hint {
+      font-size: 16px;
+      color: #999;
+      text-align: center;
+    }
+
+    #reclick .item {
+      width: 66%;
+      height: 66px;
+      line-height: 66px;
+      background-color: lightskyblue;
+      border-radius: 66px;
+      color: #fff;
+      margin: 66px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="reclick">
+    <div class="hint">call fn with arguments </div>
+    <hello></hello>
+    <div class="hint">call fn without arguments </div>
+    <world></world>
+  </div>
+</body>
+<script src="../vue.min.js"></script>
+<script src="../vue-reclick.js"></script>
+<script>
+  //example 1.
+  Vue.component('hello', {
+    template: '<div v-reclick="()=>helloFn(a,b,c)" class="item">hello!</div>',
+    data: function () {
+      return {
+        a: 'hello',
+        b: 'world',
+        c: '!'
+      }
+    },
+    methods: {
+      helloFn: function (a, b, c) {
+        console.log(`${a},${b}${c}`)
+      },
+    }
+  })
+  //example 2.
+  Vue.component('world', {
+    template: '<div v-reclick="()=>worldFn()" class="item">world!</div>',
+    methods: {
+      worldFn: function () {
+        console.log('hello,world!!')
+      }
+    }
+  })
+  new Vue({
+    el: '#reclick',
+  })
+</script>
+
+</html>
