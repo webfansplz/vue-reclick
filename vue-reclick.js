@@ -2,7 +2,7 @@
   /**
    * 函数节流
    *
-   * @param {any} method
+   * @param {any} method 方法名
    */
   function throttle(method) {
     clearTimeout(method.tId);
