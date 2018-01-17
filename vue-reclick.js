@@ -1,10 +1,10 @@
 (function() {
   /**
-   * 函数节流
+   * 函数防抖
    *
    * @param {any} method 方法名
    */
-  function throttle(method) {
+  function debounce(method) {
     clearTimeout(method.tId);
     method.tId = setTimeout(function() {
       method.call();
@@ -30,7 +30,7 @@
   var reclick = {
     bind: function(el, binding) {
       addEvent(el, 'click', function() {
-        throttle(binding.value);
+        debounce(binding.value);
       });
     },
     unbind: function(el) {

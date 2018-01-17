@@ -1,6 +1,6 @@
 {
   "name": "vue-reclick",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "a directive of vue.js",
   "main": "vue-reclick.js",
   "scripts": {
@@ -10,10 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/webfansplz/vue-reclick.git"
   },
-  "keywords": [
-    "vue",
-    "vue-reclick"
-  ],
+  "keywords": ["vue", "vue-reclick"],
   "author": "webfansplz",
   "license": "ISC",
   "bugs": {
